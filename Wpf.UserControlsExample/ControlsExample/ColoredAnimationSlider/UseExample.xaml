@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="Wpf.UserControlsExample.ControlsExample.ColoredAnimationSlider.UseExample"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Wpf.UserControlsExample.ControlsExample.ColoredAnimationSlider"
+             xmlns:nou="clr-namespace:Wpf.UserControlsExample.ControlsExample.ColoredAnimationSlider.ControlNoumenon"
+             mc:Ignorable="d" Background="Black"
+             >
+    <Grid>
+        <nou:ColoredAnimationSlider/>
+    </Grid>
+</UserControl>

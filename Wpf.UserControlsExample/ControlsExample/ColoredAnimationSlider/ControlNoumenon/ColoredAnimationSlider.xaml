@@ -1,0 +1,170 @@
+﻿<UserControl
+    x:Class="Wpf.UserControlsExample.ControlsExample.ColoredAnimationSlider.ControlNoumenon.ColoredAnimationSlider"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Wpf.UserControlsExample.ControlsExample.ColoredAnimationSlider.ControlNoumenon"
+    mc:Ignorable="d" Background="Black">
+    <UserControl.Resources>
+        <!-- 旋转动画 -->
+        <Storyboard x:Key="RotateAnimation">
+            <DoubleAnimation
+                Storyboard.TargetName="StarRotation"
+                Storyboard.TargetProperty="Angle"
+                From="0" To="360"
+                Duration="0:0:1"
+                RepeatBehavior="Forever" />
+        </Storyboard>
+
+        <!-- 滑块样式 -->
+        <Style x:Key="CustomThumbStyle" TargetType="Thumb">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Thumb">
+                        <Grid VerticalAlignment="Center">
+                            <Path x:Name="Star" Fill="#FFECEC" Stroke="#AE0000" StrokeThickness="2">
+                                <Path.Data>
+                                    <PathGeometry>
+                                        <PathFigure StartPoint="10,0">
+                                            <LineSegment Point="13,7" />
+                                            <LineSegment Point="20,7" />
+                                            <LineSegment Point="15,12" />
+                                            <LineSegment Point="17,19" />
+                                            <LineSegment Point="10,15" />
+                                            <LineSegment Point="3,19" />
+                                            <LineSegment Point="5,12" />
+                                            <LineSegment Point="0,7" />
+                                            <LineSegment Point="7,7" />
+                                            <LineSegment Point="10,0" />
+                                        </PathFigure>
+                                    </PathGeometry>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform x:Name="StarRotation" CenterX="10" CenterY="10" />
+                                </Path.RenderTransform>
+                                <Path.Effect>
+                                    <DropShadowEffect Color="#FF00A2FF"
+                                                      Direction="0"
+                                                      ShadowDepth="0"
+                                                      BlurRadius="10"
+                                                      Opacity="0.5" />
+                                </Path.Effect>
+                            </Path>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDragging" Value="True">
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard Name="RotateStoryboard"
+                                                     Storyboard="{StaticResource RotateAnimation}" />
+                                </Trigger.EnterActions>
+                                <Trigger.ExitActions>
+                                    <StopStoryboard BeginStoryboardName="RotateStoryboard" />
+                                </Trigger.ExitActions>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- 滑动条样式 -->
+        <Style x:Key="CustomSliderStyle" TargetType="Slider">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Slider">
+                        <Grid>
+                            <Border x:Name="TrackBackground"
+                                    Height="4"
+                                    CornerRadius="2">
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0,0" Opacity="0.3"
+                                                         EndPoint="1,0">
+                                        <GradientStop Color="HotPink"
+                                                      Offset="0" />
+                                        <GradientStop Color="CornflowerBlue"
+                                                      Offset="0.25" />
+                                        <GradientStop Color="LawnGreen"
+                                                      Offset="0.5" />
+                                        <GradientStop Color="LightCoral"
+                                                      Offset="0.75" />
+                                        <GradientStop Color="OrangeRed"
+                                                      Offset="1.0" />
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                            </Border>
+                            <Track x:Name="PART_Track">
+                                <Track.DecreaseRepeatButton>
+                                    <RepeatButton Command="Slider.DecreaseLarge">
+                                        <RepeatButton.Template>
+                                            <ControlTemplate TargetType="RepeatButton">
+                                                <Border Height="4" CornerRadius="2">
+                                                    <Border.Background>
+                                                        <LinearGradientBrush
+                                                            StartPoint="0,0"
+                                                            EndPoint="1,0">
+                                                            <GradientStop Color="HotPink"
+                                                                          Offset="0" />
+                                                            <GradientStop Color="CornflowerBlue"
+                                                                          Offset="0.25" />
+                                                            <GradientStop Color="LawnGreen"
+                                                                          Offset="0.5" />
+                                                            <GradientStop Color="LightCoral"
+                                                                          Offset="0.75" />
+                                                            <GradientStop Color="OrangeRed"
+                                                                          Offset="1.0" />
+                                                        </LinearGradientBrush>
+                                                    </Border.Background>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </RepeatButton.Template>
+                                    </RepeatButton>
+                                </Track.DecreaseRepeatButton>
+                                <Track.Thumb>
+                                    <Thumb Style="{StaticResource CustomThumbStyle}" />
+                                </Track.Thumb>
+                                <Track.IncreaseRepeatButton>
+                                    <RepeatButton Command="Slider.IncreaseLarge">
+                                        <RepeatButton.Template>
+                                            <ControlTemplate TargetType="RepeatButton">
+                                                <Border Height="4" CornerRadius="2">
+                                                    <Border.Background>
+                                                        <LinearGradientBrush Opacity="0.15"
+                                                                             StartPoint="0,0"
+                                                                             EndPoint="1,0">
+                                                            <GradientStop Color="HotPink"
+                                                                          Offset="0" />
+                                                            <GradientStop Color="CornflowerBlue"
+                                                                          Offset="0.25" />
+                                                            <GradientStop Color="LawnGreen"
+                                                                          Offset="0.5" />
+                                                            <GradientStop Color="LightCoral"
+                                                                          Offset="0.75" />
+                                                            <GradientStop Color="OrangeRed"
+                                                                          Offset="1.0" />
+                                                        </LinearGradientBrush>
+                                                    </Border.Background>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </RepeatButton.Template>
+                                    </RepeatButton>
+                                </Track.IncreaseRepeatButton>
+                            </Track>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <StackPanel VerticalAlignment="Center">
+            <Slider Style="{StaticResource CustomSliderStyle}"
+                    Minimum="0" Name="Slider"
+                    Maximum="100"
+                    Value="75"
+                    Margin="20" />
+            <TextBlock Foreground="White" FontSize="20" HorizontalAlignment="Center" Text="{Binding ElementName=Slider,Path=Value}"></TextBlock>
+        </StackPanel>
+
+    </Grid>
+</UserControl>
