@@ -4,6 +4,15 @@
              xmlns:local="clr-namespace:Wpf.UserControlsExample"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+          
+            
+            <Style TargetType="Window">
+                <Setter Property="RenderOptions.EdgeMode" Value="Aliased"/>
+                <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality"/>
+                <Setter Property="TextOptions.TextRenderingMode" Value="ClearType"/>
+                <Setter Property="TextOptions.TextFormattingMode" Value="Display"/>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

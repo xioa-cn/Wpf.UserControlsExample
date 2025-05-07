@@ -1,0 +1,215 @@
+﻿<UserControl x:Class="Wpf.UserControlsExample.ControlsExample.AnimationSeparator.UseExample"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Wpf.UserControlsExample.ControlsExample.AnimationSeparator"
+             xmlns:controlNoumenon="clr-namespace:Wpf.UserControlsExample.ControlsExample.AnimationSeparator.ControlNoumenon"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+
+        <!-- 横向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="20,20"
+            Orientation="Horizontal"
+            VerticalAlignment="Top"
+            AnimationDuration="0:0:4" />
+        <!-- 横向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="20,60"
+            Orientation="Horizontal"
+            VerticalAlignment="Top"
+            AnimationDuration="0:0:3" />
+        <!-- 横向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="20,100"
+            Orientation="Horizontal"
+            VerticalAlignment="Top"
+            AnimationDuration="0:0:2" />
+        <!-- 横向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="20,140"
+            Orientation="Horizontal"
+            VerticalAlignment="Top"
+            AnimationDuration="0:0:1" />
+
+        <!-- 横向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="20,20"
+            Orientation="Horizontal" AnimationPoint="Tail"
+            VerticalAlignment="Top"
+            AnimationDuration="0:0:4" />
+        <!-- 横向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="20,60"
+            Orientation="Horizontal" AnimationPoint="Tail"
+            VerticalAlignment="Top"
+            AnimationDuration="0:0:3" />
+        <!-- 横向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="20,100"
+            Orientation="Horizontal" AnimationPoint="Tail"
+            VerticalAlignment="Top"
+            AnimationDuration="0:0:2" />
+        <!-- 横向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="20,140"
+            Orientation="Horizontal" AnimationPoint="Tail"
+            VerticalAlignment="Top"
+            AnimationDuration="0:0:1" />
+
+        <!-- 纵向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="20,20"
+            Orientation="Vertical"
+            HorizontalAlignment="Left"
+            AnimationDuration="0:0:4" />
+        <!-- 纵向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="60,20"
+            Orientation="Vertical"
+            HorizontalAlignment="Left"
+            AnimationDuration="0:0:3" />
+        <!-- 纵向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="100,20"
+            Orientation="Vertical"
+            HorizontalAlignment="Left"
+            AnimationDuration="0:0:2" />
+        <!-- 纵向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="140,20"
+            Orientation="Vertical"
+            HorizontalAlignment="Left"
+            AnimationDuration="0:0:1" />
+
+        <!-- 纵向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="20,20"
+            Orientation="Vertical" AnimationPoint="Tail"
+            HorizontalAlignment="Left"
+            AnimationDuration="0:0:4" />
+        <!-- 纵向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="60,20"
+            Orientation="Vertical" AnimationPoint="Tail"
+            HorizontalAlignment="Left"
+            AnimationDuration="0:0:3" />
+        <!-- 纵向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="100,20"
+            Orientation="Vertical" AnimationPoint="Tail"
+            HorizontalAlignment="Left"
+            AnimationDuration="0:0:2" />
+        <!-- 纵向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="140,20"
+            Orientation="Vertical" AnimationPoint="Tail"
+            HorizontalAlignment="Left"
+            AnimationDuration="0:0:1" />
+
+
+        <!-- 横向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="20,20"
+            Orientation="Horizontal"
+            VerticalAlignment="Bottom" AnimationPoint="Tail"
+            AnimationDuration="0:0:4" />
+        <!-- 横向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="20,60"
+            Orientation="Horizontal"
+            VerticalAlignment="Bottom" AnimationPoint="Tail"
+            AnimationDuration="0:0:3" />
+        <!-- 横向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="20,100"
+            Orientation="Horizontal" AnimationPoint="Tail"
+            VerticalAlignment="Bottom"
+            AnimationDuration="0:0:2" />
+        <!-- 横向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="20,140"
+            Orientation="Horizontal" AnimationPoint="Tail"
+            VerticalAlignment="Bottom"
+            AnimationDuration="0:0:1" />
+
+        <!-- 横向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="20,20"
+            Orientation="Horizontal"
+            VerticalAlignment="Bottom"
+            AnimationDuration="0:0:4" />
+        <!-- 横向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="20,60"
+            Orientation="Horizontal"
+            VerticalAlignment="Bottom"
+            AnimationDuration="0:0:3" />
+        <!-- 横向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="20,100"
+            Orientation="Horizontal"
+            VerticalAlignment="Bottom"
+            AnimationDuration="0:0:2" />
+        <!-- 横向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="20,140"
+            Orientation="Horizontal"
+            VerticalAlignment="Bottom"
+            AnimationDuration="0:0:1" />
+
+        <!-- 纵向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="20,20"
+            Orientation="Vertical" AnimationPoint="Tail"
+            HorizontalAlignment="Right"
+            AnimationDuration="0:0:4" />
+        <!-- 纵向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="60,20"
+            Orientation="Vertical" AnimationPoint="Tail"
+            HorizontalAlignment="Right"
+            AnimationDuration="0:0:3" />
+        <!-- 纵向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="100,20"
+            Orientation="Vertical" AnimationPoint="Tail"
+            HorizontalAlignment="Right"
+            AnimationDuration="0:0:2" />
+        <!-- 纵向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="140,20"
+            Orientation="Vertical"
+            AnimationPoint="Tail"
+            HorizontalAlignment="Right"
+            AnimationDuration="0:0:1" />
+
+        <!-- 纵向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="20,20"
+            Orientation="Vertical"
+            HorizontalAlignment="Right"
+            AnimationDuration="0:0:4" />
+        <!-- 纵向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="60,20"
+            Orientation="Vertical"
+            HorizontalAlignment="Right"
+            AnimationDuration="0:0:3" />
+        <!-- 纵向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="100,20"
+            Orientation="Vertical"
+            HorizontalAlignment="Right"
+            AnimationDuration="0:0:2" />
+        <!-- 纵向分割线 -->
+        <controlNoumenon:AnimatedSeparator
+            Margin="140,20"
+            Orientation="Vertical"
+            HorizontalAlignment="Right"
+            AnimationDuration="0:0:1" />
+
+    </Grid>
+</UserControl>
