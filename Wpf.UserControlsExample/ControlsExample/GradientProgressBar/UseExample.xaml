@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="Wpf.UserControlsExample.ControlsExample.GradientProgressBar.UseExample"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Wpf.UserControlsExample.ControlsExample.GradientProgressBar"
+             xmlns:controlNoumenon="clr-namespace:Wpf.UserControlsExample.ControlsExample.GradientProgressBar.ControlNoumenon"
+             mc:Ignorable="d" Background="Black" Height="450" Width="800"
+             >
+    <Grid Margin="20">
+        <StackPanel>
+            <controlNoumenon:GradientProgressBar Value="95" 
+                                       StartColor="#FF6B4BFF" 
+                                       EndColor="#FF4B4BFF"/>
+            
+            <controlNoumenon:GradientProgressBar Value="80" 
+                                                 Label="Reparing:"
+                                                 StartColor="#FF6B4BFF" 
+                                                 EndColor="#FF4B4BFF"
+                                                 Margin="0,10"/>
+            
+            <controlNoumenon:GradientProgressBar Value="70" 
+                                                 Label="Overload:"
+                                                 StartColor="#FFB54BFF" 
+                                                 EndColor="#FF8F4BFF"
+                                                 Margin="0,10"/>
+            
+            <controlNoumenon:GradientProgressBar Value="60" 
+                                                 Label="Outaged:"
+                                                 StartColor="#FFFF4B9E" 
+                                                 EndColor="#FFFF4B6B"
+                                                 Margin="0,10"/>
+            
+            <controlNoumenon:GradientProgressBar Value="50" 
+                                                 Label="Obsoleted:"
+                                                 StartColor="#FFFF4B4B" 
+                                                 EndColor="#FFFF6B4B"
+                                                 Margin="0,10"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.UserControlsExample", "Wpf.UserControlsExample\Wpf.UserControlsExample.csproj", "{802D11F8-4E0C-4F14-B6E1-2B5BEE4F34CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{802D11F8-4E0C-4F14-B6E1-2B5BEE4F34CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{802D11F8-4E0C-4F14-B6E1-2B5BEE4F34CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{802D11F8-4E0C-4F14-B6E1-2B5BEE4F34CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{802D11F8-4E0C-4F14-B6E1-2B5BEE4F34CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
